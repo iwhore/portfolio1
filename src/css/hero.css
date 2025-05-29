@@ -4,10 +4,10 @@
 }
 
 .hero-section {
-  background-repeat: no-repeat;
-    background-size: 60% 100%;
-    min-height: 812px;
-  background-image: url('../img/Hero.png');;
+  background-image: url('/img/hero-back.jpg');
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {

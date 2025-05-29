@@ -37,7 +37,7 @@ margin-bottom: 32px;
 .icon-wrap {
   width: 48px;
   height: 48px; 
-background-color: #ED3B44;
+background-color: #7432d6;
 border-radius: 10px;
 display: flex;
 align-items: center;
@@ -64,6 +64,8 @@ font-weight: 500;
 
 
 
+
+
 .benefits-link {
     font-weight: 500;
         font-size: 16px;
@@ -75,6 +77,13 @@ font-weight: 500;
             width: 187px;
             height: 55px;
            margin-top: 32px;
+           transition-duration: 0.4s;
+}
+
+.benefits-link:hover,
+.benefits-link:focus{
+    background-color: #7432d6;
+    border: none;
 }
 
 
@@ -116,5 +125,15 @@ font-weight: 500;
     display: flex;
     justify-content: space-between;
 }
+
+.benefits-list {
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.benefits-item {
+    width: 332px;
+   }
+
 
 }

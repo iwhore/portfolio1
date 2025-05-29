@@ -1,4 +1,3 @@
-
 .swiper-button-next, .swiper-button-prev {
     visibility: hidden;
 }
@@ -29,22 +28,39 @@ text-transform: uppercase;
 color: rgba(250, 250, 250, 0.4);
 }
 
+
+
 .btn {
     border-radius: 60px;
     width: 177px;
     height: 555px;
-    background-color: #ED3B44;
-
+    background-color: #7432d6;
+    border: 0 solid #7432d6;
 
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
     color: #fafafa;
-
+    transition-duration: 0.3s;
     margin-left: 64px;
     margin-bottom: 64px;
-    padding-top: 12px;
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: #7432d6;;
+}
+
+.icon-arrow:hover,
+.btn::after{
+    background-color: #7432d6;
+    border: 0 solid #7432d6;
+}
+
+.btn:hover,
+.btn::after{
+    background-color: #49267e;
 }
 /* ====================================================== */
 @media screen and (min-width: 320px) and (max-width: 374px){
@@ -106,22 +122,6 @@ color: rgba(250, 250, 250, 0.4);
     height: 45px;
     margin-left: 32px;
     margin-bottom: 32px;
-}
-
-.btn-projects {
-    margin-left: 32px;
-    margin-top: 32px;
-}
-
-.btn-link {
-    width: 141px;
-    height: 45px;
-    display: block;
-    background-color: #ed3b44;
-    border-radius: 60px;
-    padding: 11px 28px;
-    transition: all .25s cubic-bezier(.4, 0, .2, 1);
-
 }
 
 
@@ -231,20 +231,12 @@ color: rgba(250, 250, 250, 0.4);
     color: #1c1d20;
 }
 
-.btn-projects {
-    margin-left: 32px;
-    margin-top: 32px;
-}
+.btn {
 
-.btn-link {
     width: 141px;
     height: 45px;
-    display: block;
-    background-color: #ed3b44;
-    border-radius: 60px;
-    padding: 11px 28px;
-    transition: all .25s cubic-bezier(.4, 0, .2, 1);
-
+    margin-left: 32px;
+    margin-bottom: 32px;
 }
 /* ----------------------------------------------- */
 .div-right {
@@ -356,20 +348,13 @@ color: rgba(250, 250, 250, 0.4);
 
 }
 
-.btn-projects {
-    margin-left: 64px;
-    margin-top: 64px;
-}
-
-.btn-link {
+.btn {
+    border-radius: 60px;
     width: 177px;
     height: 55px;
-        display: block;
-        background-color: #ed3b44;
-        border-radius: 60px;
-        padding: 18px 48px;
-        transition: all .25s cubic-bezier(.4, 0, .2, 1);
-
+    margin-left: 64px;
+    margin-bottom: 64px;
+    margin-top: 32px;
 }
 
 /* ---------------------------------------------  */
@@ -380,7 +365,7 @@ color: rgba(250, 250, 250, 0.4);
     margin-left: auto;
     margin-right: auto;
 }
-/*
+
 .image {
 
     width: 614px;
@@ -456,7 +441,4 @@ color: rgba(250, 250, 250, 0.4);
     margin-left: auto;
     margin-right: auto;
 }
-
 }
-
-

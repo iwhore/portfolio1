@@ -24,6 +24,12 @@
   margin-bottom: 32px;
 }
 
+.reviews-btn:hover,
+.reviews-btn:active{
+  background-color: #7432d6;
+  border: 0px solid #7432d6;
+}
+
 .review-item {
   width: 344px;
   min-height: 302px;
