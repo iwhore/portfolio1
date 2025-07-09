@@ -10,7 +10,7 @@
   <script type="module" crossorigin src="/portfolio1/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/portfolio1/assets/vendor-2cec5e20.js">
   <link rel="stylesheet" href="/portfolio1/assets/vendor-e049ca2e.css">
-  <link rel="stylesheet" href="/portfolio1/assets/index-3b02c607.css">
+  <link rel="stylesheet" href="/portfolio1/assets/index-4a22390a.css">
 </head>
 
 <body>
@@ -143,9 +143,7 @@
               development.Front and Back End Developer with experience in
               building and enhancing responsive websites. Skilled in JavaScript,
               TypeScript, HTML/CSS, and modern frameworks to deliver interactive
-              and user-centered web solutions. Adept at optimizing performance,
-              improving UI/UX, and collaborating with teams to meet both
-              technical and business goals. I have an understanding of different
+              and user-centered web solutions. I have an understanding of different
               programming languages and technologies, always ready to improve my
               skills.
             </p>
@@ -153,14 +151,9 @@
             <p class="accordeon-text-content">
               Able to work both independently and in a team. I can effectively
               cooperate with colleagues, exchanging ideas and finding optimal
-              solutions. Professional maturity allows you to calmly cope with
-              challenges and stressful situations, while maintaining a high
-              quality of work. I am always looking for opportunities for
+              solutions. I am always looking for opportunities for
               self-improvement. I actively study new technologies and practices
-              to stay abreast of the latest innovations. I have a strong
-              understanding of various programming languages, frameworks and
-              architectural concepts that allow me to create efficient and
-              scalable software.
+              to stay abreast of the latest innovations. 
             </p>
           </div>
         </li>
@@ -176,7 +169,6 @@
           <div class="accordion-description">
             <p class="accordeon-text-content">Frontend development</p>
             <p class="accordeon-text-content">Backend development</p>
-            <p class="accordeon-text-content">HeadlessCMS,Wordpress</p>
           </div>
         </li>
         <li class="accordion-element">
@@ -217,9 +209,6 @@
           </li>
           <li class="swiper-slide skill-slide">
             <p class="skill-name">Node.js</p>
-          </li>
-          <li class="swiper-slide skill-slide">
-            <p class="skill-name">React Native</p>
           </li>
           <li class="swiper-slide skill-slide">
             <p class="skill-name">Figma</p>
@@ -294,6 +283,9 @@
     <div class="div-left">
       <ul class="menu-list">
         <li class="menu-button">
+          <p>#html/css</p>
+        </li>
+        <li class="menu-button">
           <p>#react</p>
         </li>
         <li class="menu-button">
@@ -331,76 +323,13 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <picture>
-              <source
-                class="image-projects"
-                srcset="/portfolio1/assets/projects01-c04604e1.png 1x, /portfolio1/assets/projects1@2x-4dbbd96c.png 2x"
-                width="614"
-                height="385"
-                media="(min-width: 767px)"
-              />
-              <source
-                class="image-projects"
-                srcset="/portfolio1/assets/mobile-a957310f.png 1x, /portfolio1/assets/mobile@2x-3d4e8716.png 2x"
-                width="311"
-                height="195"
-                media="(min-width: 311px)"
-              />
-              <img
-                class="image-projects"
-                src="./img/projects/mobil.png"
-                alt="image"
-                class="project1"
-              />
-            </picture>
+            <img class="image" src="./img/projects/project1.png " alt="">
           </div>
           <div class="swiper-slide">
-            <picture>
-              <source
-                class="image-projects"
-                srcset="/portfolio1/assets/projects2-76429cc6.png 1x"
-                width="614"
-                height="385"
-                media="(min-width: 767px)"
-              />
-              <source
-                class="image-projects"
-                srcset="/portfolio1/assets/mobile2-6bbe7939.png 1x, /portfolio1/assets/mobile2@2x-fded5c40.png 2x"
-                width="311"
-                height="195"
-                media="(min-width: 311px)"
-              />
-              <img
-                class="image-projects"
-                src="./img/projects/mobil.png"
-                alt="image"
-                class="project2"
-              />
-            </picture>
+            <img  class="image" src="/portfolio1/assets/projects2-76429cc6.png" alt="">
           </div>
-          <div class="swiper-slide">
-            <picture>
-              <source
-                class="image-projects"
-                srcset="/portfolio1/assets/projects3-e7db70e6.png 1x, /portfolio1/assets/projects3@2x-de033da4.png 2x"
-                width="614"
-                height="385"
-                media="(min-width: 767px)"
-              />
-              <source
-                class="image-projects"
-                srcset="/portfolio1/assets/mobile3-134771c3.png 1x, /portfolio1/assets/mobile3@2x-8cf969fe.png 2x"
-                width="311"
-                height="195"
-                media="(min-width: 311px)"
-              />
-              <img
-                class="image-projects"
-                src="./img/projects/mobil.png"
-                alt="image"
-                class="project3"
-              />
-            </picture>
+           <div class="swiper-slide">
+            <img  class="image" src="./img/projects/projects4.png " alt="">
           </div>
         </div>
         <!-- If we need pagination -->
@@ -450,8 +379,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      // direction: 'vertical',
       loop: true,
 
       // If we need pagination
@@ -459,56 +386,38 @@
         el: '.swiper-pagination',
       },
       
-
       // Navigation arrows
       navigation: {
         nextEl: '.right-icon',
         prevEl: '.left-icon',
       },
 
-      // navigation: {
-      //          nextEl: '.swiper-button-next',
-      //          prevEl: '.swiper-button-prev',
-      //      },
-
-      // And if we need scrollbar
-      // scrollbar: {
-      //     el: '.swiper-scrollbar',
-      // },
     });
     const projectLinks = [
-    "https://cyberons.github.io/project-13/",    // для 1 слайду
-    "https://cyberons.github.io/group-project-18/",             // для 2 слайду
-    "https://example.com/project-3",             // для 3 слайду
+    "https://diplom-9olf.onrender.com",
+    "https://cyberons.github.io/group-project-18/",             
+    "https://angel-studio.onrender.com/",        
   ];
 
   const btnLink = document.querySelector(".btn-link");
 
-  // Оновлення посилання під час зміни слайду
   swiper.on("slideChange", function () {
-    // Визначаємо активний індекс
     const realIndex = swiper.realIndex;
     btnLink.href = projectLinks[realIndex];
     btnLink.setAttribute("aria-label", `project ${realIndex + 1}`);
   });
 
-  // Встановлюємо початкове посилання
   btnLink.href = projectLinks[swiper.realIndex];
   </script>
-
-  <!-- <script type="module" src="./html.js"></script> -->
 </section>
     <section class="git container">
     <h2 class="benefits-title">Git</h2>
     <div class="lan-contaienr">
         <div class="lan">
-            <a href=""><p>JavaScript</p></a>
+            <a href="https://github.com/stars/iwhore/lists/js"><p>JavaScript</p></a>
         </div>
         <div class="lan">
-            <a href=""><p>React</p></a>
-        </div>
-        <div class="lan">
-            <a href=""><p>TypeScript</p></a>
+            <a href="https://github.com/stars/iwhore/lists/react"><p>React</p></a>
         </div>
     </div>
 </section>
@@ -1041,27 +950,6 @@
             height="314"
           />
         </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section class="reviews section">
-  <div class="container">
-    <h2 class="review-title">reviews</h2>
-    <div class="reviews-swiper">
-      <ul class="swiper-wrapper review-list"></ul>
-      <div class="review-buttons-wrapper">
-        <button class="previous-btn reviews-btn" type="button">
-          <svg class="reviews-btn-left-icon arrow-item">
-            <use href="/portfolio1/assets/symbol-defs-f871948f.svg#icon-arrow-narrow-left"></use>
-          </svg>
-        </button>
-        <button class="next-btn reviews-btn" type="button">
-          <svg class="reviews-btn-right-icon arrow-item">
-            <use href="/portfolio1/assets/symbol-defs-f871948f.svg#icon-arrow-narrow-left"></use>
-          </svg>
-        </button>
       </div>
     </div>
   </div>
