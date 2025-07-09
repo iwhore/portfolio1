@@ -10,6 +10,9 @@
     <div class="div-left">
       <ul class="menu-list">
         <li class="menu-button">
+          <p>#html/css</p>
+        </li>
+        <li class="menu-button">
           <p>#react</p>
         </li>
         <li class="menu-button">
@@ -47,93 +50,13 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <picture>
-              <source
-                class="image-projects"
-                srcset="
-                  ./img/projects/projects01.png   1x,
-                  ./img/projects/projects1@2x.png 2x
-                "
-                width="614"
-                height="385"
-                media="(min-width: 767px)"
-              />
-              <source
-                class="image-projects"
-                srcset="
-                  ./img/projects/mobile.png    1x,
-                  ./img/projects/mobile@2x.png 2x
-                "
-                width="311"
-                height="195"
-                media="(min-width: 311px)"
-              />
-              <img
-                class="image-projects"
-                src="./img/projects/mobil.png"
-                alt="image"
-                class="project1"
-              />
-            </picture>
+            <img class="image" src="./img/projects/project1.png " alt="">
           </div>
           <div class="swiper-slide">
-            <picture>
-              <source
-                class="image-projects"
-                srcset="
-                  ./img/projects/projects2.png 1x
-                "
-                width="614"
-                height="385"
-                media="(min-width: 767px)"
-              />
-              <source
-                class="image-projects"
-                srcset="
-                  ./img/projects/mobile2.png    1x,
-                  ./img/projects/mobile2@2x.png 2x
-                "
-                width="311"
-                height="195"
-                media="(min-width: 311px)"
-              />
-              <img
-                class="image-projects"
-                src="./img/projects/mobil.png"
-                alt="image"
-                class="project2"
-              />
-            </picture>
+            <img  class="image" src="./img/projects/projects2.png" alt="">
           </div>
-          <div class="swiper-slide">
-            <picture>
-              <source
-                class="image-projects"
-                srcset="
-                  ./img/projects/projects3.png    1x,
-                  ./img/projects/projects3@2x.png 2x
-                "
-                width="614"
-                height="385"
-                media="(min-width: 767px)"
-              />
-              <source
-                class="image-projects"
-                srcset="
-                  ./img/projects/mobile3.png    1x,
-                  ./img/projects/mobile3@2x.png 2x
-                "
-                width="311"
-                height="195"
-                media="(min-width: 311px)"
-              />
-              <img
-                class="image-projects"
-                src="./img/projects/mobil.png"
-                alt="image"
-                class="project3"
-              />
-            </picture>
+           <div class="swiper-slide">
+            <img  class="image" src="./img/projects/projects4.png " alt="">
           </div>
         </div>
         <!-- If we need pagination -->
@@ -183,8 +106,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      // direction: 'vertical',
       loop: true,
 
       // If we need pagination
@@ -192,42 +113,27 @@
         el: '.swiper-pagination',
       },
       
-
       // Navigation arrows
       navigation: {
         nextEl: '.right-icon',
         prevEl: '.left-icon',
       },
 
-      // navigation: {
-      //          nextEl: '.swiper-button-next',
-      //          prevEl: '.swiper-button-prev',
-      //      },
-
-      // And if we need scrollbar
-      // scrollbar: {
-      //     el: '.swiper-scrollbar',
-      // },
     });
     const projectLinks = [
-    "https://cyberons.github.io/project-13/",    // для 1 слайду
-    "https://cyberons.github.io/group-project-18/",             // для 2 слайду
-    "https://example.com/project-3",             // для 3 слайду
+    "https://diplom-9olf.onrender.com",
+    "https://cyberons.github.io/group-project-18/",             
+    "https://angel-studio.onrender.com/",        
   ];
 
   const btnLink = document.querySelector(".btn-link");
 
-  // Оновлення посилання під час зміни слайду
   swiper.on("slideChange", function () {
-    // Визначаємо активний індекс
     const realIndex = swiper.realIndex;
     btnLink.href = projectLinks[realIndex];
     btnLink.setAttribute("aria-label", `project ${realIndex + 1}`);
   });
 
-  // Встановлюємо початкове посилання
   btnLink.href = projectLinks[swiper.realIndex];
   </script>
-
-  <!-- <script type="module" src="./html.js"></script> -->
 </section>
